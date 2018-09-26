@@ -15,7 +15,7 @@ public class MySqlCon
 		Connection con=DriverManager.getConnection(url,uname,pass);
 		Statement stmt=con.createStatement();
 		ResultSet rs=stmt.executeQuery("select * from books");
-		
+		//hi this is kirti
 		while(rs.next()) {
 			String name=rs.getString("author");
 			System.out.println(name);
